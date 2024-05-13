@@ -1,0 +1,557 @@
+:root {
+  --main-color: #343434;
+  --secondry-color: #748182;
+  --bg-color: #1c1c1c;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  color: var(--main-color);
+}
+
+p {
+  line-height: 1.6;
+  margin: 0;
+  font-size: 15px;
+  color: var(--secondry-color);
+}
+span {
+  display: inline-block;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #343434;
+}
+
+.section-paddind {
+  padding: 100px 0;
+}
+
+.bg-gray {
+  background: #f7f7f7;
+}
+
+.section-head {
+  margin-bottom: 80px;
+}
+.section-head h3 {
+  font-size: 40px;
+  font-weight: 800;
+  position: relative;
+  display: inline-block;
+}
+/* !!!!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!!! */
+/* ?? START OF NAVBAR*/
+
+.navbar-default .navbar-nav .nav-item a {
+  color: #111;
+  font-size: 14px;
+  margin: 0px 20px 0;
+  position: relative;
+}
+
+.navbar-default .navbar-nav .nav-item a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #111;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.navbar-default .navbar-nav .nav-item a.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0px;
+  bottom: -2px;
+  background-color: #111;
+  z-index: 5;
+  transition: all 0.3s ease-in-out;
+}
+/* ?? END OF NAVBAR*/
+/* ?? END OF NAVBAR*/
+/* !!!!!!!!!!!!!!!!!!!! */
+/* ?? start of header ??*/
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(imgs/bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.home span.animation::after {
+  content: "|";
+  animation-name: type-writer;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+
+.social-icons a span {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+.social-icons a {
+  color: white;
+  line-height: 3;
+}
+/* ?? start of header ??*/
+/* !!!!!!!!!!!!!!!!!!!! */
+
+/* ???hero sec */
+/* ???hero sec */
+/* !!!!!!!!!!!!!!!!!!!! */
+.hero {
+  padding: 100px 0px 70px 0;
+}
+.hero .hero-img::after {
+  content: "";
+  background-image: url(imgs/dots.png);
+  background-repeat: repeat;
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  bottom: -30px;
+  left: 0px;
+  z-index: -1;
+}
+.hero-content h2 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-size: 30px;
+  font-style: normal;
+  margin: 0px;
+}
+.hero-content .sub-title {
+  color: #748182;
+  font-size: 14px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.hero-content p {
+  color: #748182;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+.skill-progress {
+  padding: 5px 10px;
+  width: 100%;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15);
+  position: relative;
+  margin-bottom: 30px;
+}
+.skill {
+  margin-top: 30px;
+}
+.skill-progress h6 {
+  color: #fff;
+  z-index: 2;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  margin: 0;
+}
+.skill-progress span {
+  display: inline-block;
+  background: #1c1c1c;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.skill-progress span::after {
+  content: attr(data-value);
+  position: absolute;
+  color: #fff;
+  top: 6px;
+  left: 95%;
+  font-size: 11px;
+}
+.button a span {
+  display: inline-block;
+  margin-top: 20px;
+}
+.button .buton {
+  padding: 10px 30px;
+  border: solid 1px #1c1c1c;
+  border-radius: 5px;
+  background-color: #1c1c1c;
+  color: #eee;
+  font-size: 13px;
+}
+.button .buton:hover {
+  background-color: #eee;
+  color: #1c1c1c;
+  transition: all 0.5s;
+}
+
+.buton-bg {
+  background-color: white;
+  font-size: 13px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: #1c1c1c;
+}
+.buton-bg:hover {
+  background-color: #1c1c1c;
+  color: #eee;
+  transition: all 0.5s;
+}
+/* ???end hero sec */
+/* ???end hero sec */
+
+/* !!!!!!!!!!!!! */
+
+/* !!!!!!!!!!!!! */
+
+.section-head h3::after {
+  content: "";
+  width: 100%;
+  height: 30px;
+  background-image: url(imgs/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  z-index: -1;
+  background-color: white;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!! */
+/* ??? SECTION SERVICES */
+/* !!!!!!!!!!!!!!!!!!!!! */
+
+.card {
+  padding: 50px 20px;
+  background-color: #fff;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px -8px;
+}
+.icons {
+  margin-bottom: 20px;
+  width: 70px;
+  height: 70px;
+  background-color: #f4f4f4;
+  border-radius: 50%;
+  line-height: 70px;
+  transition: all 0.5s;
+}
+.card:hover .icons {
+  background-color: #1c1c1c;
+  color: #eee;
+}
+.service .card p {
+  word-spacing: 2px;
+  font-size: 14px;
+}
+/* !!!!!!!!!!!!!!! */
+
+/* ???????SECTION GALLERY */
+/* !!!!!!!!!!!!!!! */
+
+.layer {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  left: 5px;
+  background: rgba(255, 255, 255, 0.95);
+  opacity: 0;
+  transform: translateY(10px);
+}
+.layer-info h6 {
+  font-size: 12px;
+  font-weight: 800;
+  position: relative;
+  transform: translateY(-20px);
+  margin-bottom: 15px;
+  transition: all 0.7s;
+}
+
+.gallery-img:hover .layer {
+  opacity: 0.9;
+  transition: all 0.5s ease-in-out;
+  transform: translateY(0px);
+}
+.gallery-img:hover h6 {
+  transform: translateY(0px);
+}
+.layer-icon span a i {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #111;
+  border: 1px solid #111;
+  color: #eee;
+  text-align: center;
+}
+
+.layer-icon span i:hover {
+  background-color: #eee;
+  border: 1px solid #111;
+  color: #111;
+}
+.nav {
+  padding-bottom: 20px;
+}
+.nav-tabs {
+  border: none;
+  position: relative;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  border: none;
+  margin: 0 15px;
+  color: #222;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  border: none;
+}
+.filter .nav-tabs .nav-link {
+  border: none;
+  margin: 0 15px;
+  color: #222;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+.filter .nav-item .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -2px;
+  background-color: #111;
+  position: absolute;
+  z-index: 5;
+  transition: all 0.3s ease-in-out;
+}
+.nav-link {
+  padding: 0px 0;
+}
+.nav-tabs .nav-item .active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0px;
+  bottom: -2px;
+  background-color: #111;
+
+  z-index: 5;
+  transition: all 0.3s ease-in-out;
+}
+/* ?????????????????? */
+/* ?????????????????? */
+
+/* ?????????  SECTION CARSOL????????? */
+/* !!!!!!!!!!!!!!!!!!!!! */
+
+.carousel-item img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+}
+.clients .row {
+  padding: 0 50px;
+}
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+  list-style: none;
+}
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #748182;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!! */
+
+/* ??????  SECTION COUNTER */
+/* !!!!!!!!!!!!!!!!!!!!! */
+.counter {
+  font-weight: 900;
+  font-size: 30px;
+  display: block;
+}
+.numbers p {
+  font-weight: 600;
+}
+/* !!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!! */
+/* ??? SECTION TEAM */
+.img-rounded {
+  border-radius: 6px;
+}
+
+.img-area .social {
+  background-color: rgba(255, 255, 255, 0.95);
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  transform: rotateY(180deg) scale(0.5, 0.5);
+  inset: 5px;
+  transition: all 0.5s ease 0s;
+}
+
+.single-team:hover .social {
+  cursor: pointer;
+  opacity: 1;
+  transform: rotateY(0deg) scale(1, 1);
+}
+.img-area {
+  position: relative;
+  overflow: hidden;
+}
+.img-area img {
+  transition: all 0.4s ease 0s;
+}
+.img-area:hover img {
+  transform: scale(1.2);
+}
+
+.social ul li a {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  display: block;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-image: initial;
+  border-radius: 50%;
+}
+.social ul li a:hover {
+  color: #111;
+  background-color: rgba(255, 255, 255, alpha);
+  transition: all 0.5s ease 0s;
+}
+
+.img-text {
+  background-color: #5b5b5b;
+  padding: 25px;
+}
+.img-text,
+h5 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.img-text h4 {
+  color: #ffffff;
+}
+/* ????????????????? */
+/* ????????????????? */
+/* !!!!!  SECTION CONTACT */
+/* ????????????????? */
+.item:hover .icons {
+  background-color: #1c1c1c;
+  color: #eee;
+}
+.contact .info .item {
+  margin-bottom: 30px;
+}
+.contact .info .item:hover .icon {
+  background: #1c1c1c;
+  color: #eee;
+}
+.contact .info .item .icon {
+  font-size: 25px;
+  margin-bottom: 15px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background: #f4f4f4;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.contact .info .item h6 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.contact .form input[type="text"],
+.contact .form input[type="email"],
+.contact .form textarea {
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  background: #f4f4f4;
+}
+.contact .form textarea {
+  height: 160px;
+  max-height: 160px;
+  max-width: 100%;
+}
+.contact .form .butn {
+  border: solid 1px #1c1c1c;
+  border-radius: 5px;
+  background-color: #1c1c1c;
+  color: #eee;
+  font-size: 13px;
+  padding: 10px 40px;
+}
+.contact .form .butn:hover {
+  background-color: #eee;
+  color: #1c1c1c;
+  transition: all 0.5s;
+}
+/* ???????  SECTION FOOTER?????/ */
+/* !!!!!!!!! */
+footer {
+  background: #1c1c1c;
+  padding: 30px;
+}
+footer p {
+  font-size: 13px;
+  word-spacing: 2px;
+}

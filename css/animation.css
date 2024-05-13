@@ -1,0 +1,197 @@
+@keyframes type-writer {
+  0% {
+    content: "|";
+  }
+  1% {
+    content: "D";
+  }
+  2% {
+    content: "De";
+  }
+  3% {
+    content: "Dev";
+  }
+  4% {
+    content: "Deve";
+  }
+  5% {
+    content: "Devel";
+  }
+  6% {
+    content: "Develo";
+  }
+  7% {
+    content: "Develop";
+  }
+  8% {
+    content: "Develope";
+  }
+  9% {
+    content: "Developer";
+  }
+  15% {
+    content: "Developer";
+  }
+  16% {
+    content: "Develope";
+  }
+  17% {
+    content: "Develop";
+  }
+  18% {
+    content: "Develo";
+  }
+  19% {
+    content: "Devel";
+  }
+  20% {
+    content: "Deve";
+  }
+  21% {
+    content: "Dev";
+  }
+  22% {
+    content: "De";
+  }
+  23% {
+    content: "D";
+  }
+  24% {
+    content: "";
+  }
+  25% {
+    content: "D";
+  }
+  26% {
+    content: "De";
+  }
+  27% {
+    content: "Des";
+  }
+  28% {
+    content: "Desi";
+  }
+  29% {
+    content: "Desig";
+  }
+  30% {
+    content: "Design";
+  }
+  31% {
+    content: "Designe";
+  }
+  32% {
+    content: "Designer";
+  }
+  37% {
+    content: "Designer";
+  }
+  38% {
+    content: "Designe";
+  }
+  39% {
+    content: "Design";
+  }
+  40% {
+    content: "Desig";
+  }
+  41% {
+    content: "Desi";
+  }
+  42% {
+    content: "Des";
+  }
+  43% {
+    content: "De";
+  }
+  44% {
+    content: "D";
+  }
+  45% {
+    content: "";
+  }
+  46% {
+    content: "L";
+  }
+  47% {
+    content: "La";
+  }
+  48% {
+    content: "Lar";
+  }
+  49% {
+    content: "Larr";
+  }
+  50% {
+    content: "Larry";
+  }
+  51% {
+    content: "Larry ";
+  }
+  52% {
+    content: "Larry D";
+  }
+  53% {
+    content: "Larry Da";
+  }
+  54% {
+    content: "Larry Dan";
+  }
+  55% {
+    content: "Larry Dane";
+  }
+  56% {
+    content: "Larry Danei";
+  }
+  57% {
+    content: "Larry Daneia";
+  }
+  58% {
+    content: "Larry Daneial";
+  }
+  59% {
+    content: "Larry Daneials";
+  }
+  65% {
+    content: "Larry Daneials";
+  }
+  66% {
+    content: "Larry Daneial";
+  }
+  68% {
+    content: "Larry Daneia";
+  }
+  70% {
+    content: "Larry Danei";
+  }
+  72% {
+    content: "Larry Dane";
+  }
+  73% {
+    content: "Larry Dan";
+  }
+  75% {
+    content: "Larry Da";
+  }
+  78% {
+    content: "Larry D";
+  }
+  80% {
+    content: "Larry ";
+  }
+  83% {
+    content: "Larr";
+  }
+  85% {
+    content: "Lar";
+  }
+  90% {
+    content: "La";
+  }
+  95% {
+    content: "L";
+  }
+  100% {
+    content: "|";
+  }
+}
